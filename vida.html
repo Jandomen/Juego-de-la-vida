@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la vida conway</title>
+     <link rel="stylesheet" href="./icono/vida.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+     <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+     <link rel="shortcut icon" href="./icono/iconcel.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div id="contenedor-tablero">
+
+    </div>
+     
+    <div class="contenedor-botones">
+
+        <div class="btn" id="btn1">
+            <i class="icono-power"  onclick=" intercambiarReproducción()" title="Iniciar / Pausar"></i>
+        </div>
+
+       <div class="btn" id="btn7" onclick="centrar()" title="centrar">
+             <i class="icono-pin"></i>
+        </div>
+
+        <div class="btn" id="btn6" onclick="plus()" title="Acercarse">
+            <i class="icono-caretUpSquare"></i>
+        </div>
+       
+        <div class="btn" id="btn5" onclick="minus()" title="Alejarse">
+            <i class="icono-caretDownSquare"></i>
+        </div>
+
+        <div class="btn" id="btn4" onclick="randomizar()" title="Aleatorio">
+            <i class="icono-flickr"></i>
+        </div>
+
+        <div class="btn" id="btn2">
+            <i class="icono-forward" onclick="siguienteEstado()" title="Siguiente estado"></i>
+        </div>
+
+        <div class="btn" id="btn3" onclick="limpiar()" title="Limpiar">
+            <i class="icono-reset"></i>
+        </div>
+        
+        <div class="btn" id="btn8" onclick="ayudar()"" title="Consultar ayuda">
+            <i class="icono-exclamationCircle"></i>
+        </div>
+        
+
+    </div>
+    
+    <script src="./icono/vida.js"></script>
+    
+</body>
+</html>
